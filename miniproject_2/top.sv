@@ -1,4 +1,4 @@
-`include "fade.sv"
+`include "cycle.sv"
 `include "pwm.sv"
 
 module top #(
@@ -17,7 +17,7 @@ module top #(
     
     initial RGB = 3'b100;
 
-    fade #(
+    cycle #(
         .PWM_INTERVAL(PWM_INTERVAL)
     ) u1 (
         .clk       (clk),

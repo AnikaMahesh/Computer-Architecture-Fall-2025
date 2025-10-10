@@ -1,6 +1,5 @@
-// Fade
 
-module fade #(
+module cycle #(
     parameter INC_DEC_INTERVAL = 12000,     // 12 MHz -> 1 ms
     parameter INC_DEC_MAX = 200,            // 0.2 s total per fade direction
     parameter PWM_INTERVAL = 1200,          // 100 µs period

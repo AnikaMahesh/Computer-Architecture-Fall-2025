@@ -1,7 +1,7 @@
 `timescale 10ns/10ns
 `include "top.sv"
 
-module fade_tb;
+module cycle_tb;
     parameter PWM_INTERVAL = 1200;
 
     logic clk = 0;
@@ -15,8 +15,8 @@ module fade_tb;
     );
 
     initial begin
-        $dumpfile("fade.vcd");
-        $dumpvars(0, fade_tb);
+        $dumpfile("cycle.vcd");
+        $dumpvars(0, cycle_tb);
         #200000000;
         $finish;
     end
